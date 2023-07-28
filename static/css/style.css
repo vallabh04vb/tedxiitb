@@ -1,0 +1,425 @@
+@import url(//db.onlinewebfonts.com/c/cc84650569fd07dac022c55b20c66e46?family=Futura+Bk+BT);
+.form-container {
+  /* text-align: center; */
+  /* width: 98%; */
+  max-width: 34vw;
+  margin: 2vw;
+  justify-content: center;
+  position: relative;
+}
+
+
+.navbar.bg-body-tertiary {
+  background-color: rgb(255, 255, 255) !important;
+  width: 100% !important;
+  position: fixed !important;
+  /* margin-top: -3.5vw !important; */
+  z-index: 999 !important;
+  margin-top: 0vw !important;
+
+}
+.navbar-expand-lg .navbar-collapse {
+  position: absolute;
+  /* top: 2vw; */
+  right: 5%;
+  color: rgb(255, 255, 255) !important;
+}
+#navbarSupportedContent ul li a {
+  color: rgb(0, 0, 0) !important;
+  padding: 5px 5px;
+  margin: 5px 5px;
+
+  font-size: 150%;
+}
+/* .nav-item a{
+  color: black !important;
+} */
+#navbarSupportedContent ul li a{   
+  font-family: Futura Bk BT !important;
+}
+.navbar-expand-lg .navbar-collapse {
+  position: absolute;
+  right: 5%;
+  color: rgb(255, 255, 255) !important;
+  
+  @media only screen and (max-width: 995px) {
+    top: 80% !important;
+    position: absolute;
+    background-color: rgb(0, 0, 0) !important;
+    z-index: 2 !important;
+    color: white;
+  }
+}
+#logo{
+  width: 35vh!important;
+  height: 8vh;
+}
+/* .hero-container{
+  position:fixed;
+} */
+.hero-container{
+  height: 100%;
+  width: 100%;
+  /* background-image: url(./static/images/hero-bg.png) !important; */
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* position: relative !important; */
+  position: sticky;
+  top: 0;
+  /* z-index: 999; */
+}
+#hero-img{
+  margin-top: 1vw !important;
+  padding-top: 15vw;
+  width: 100%;
+  /* position: fixed!important; */
+  /* z-index: -1 !important; */
+  position: sticky !important; 
+  top: 0 !important; 
+
+}
+.about-section{
+  position: relative;
+  top: 68vw;
+  background-color: white;
+  padding-top: 4vw;
+  /* padding-bottom: 2vw; */
+  /* margin-left: 1vw;
+  margin-right: 1vw; */
+  margin-top: 4vw;
+  z-index: 9;
+}
+.about-heading {
+  margin-top: 2vw;
+  margin-left:8vw;
+  margin-bottom: 4vw;
+  word-spacing: 0.3vw;
+  font-size: 4vw;
+  font-style: normal;
+font-weight: 400 !important;
+line-height: normal;
+  font-family: Futura Bk BT !important;
+
+}
+.about-para{
+  margin-left: 8vw;
+  font-family: Futura Bk BT !important;
+  font-size: 1.8vw;
+  position: absolute;
+  width: 74%;
+  height: 100%;
+  letter-spacing: 0.5%;
+font-weight: 400 !important;
+
+
+
+}
+#reg{
+  left: 71vw;
+  margin-top: 32vw;
+  width: 12vw;
+  height: 3.5vw;
+  border: none !important;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+#reg:hover{
+  background-color: #f1f1f1;
+}
+#register-now{
+  font-size: 1.8vw;
+  /* width: 21vw; */
+  position: absolute;
+  /* margin-right: 3vw; */
+  left: 1.5vw !important;
+  top: 0.5vw;
+  text-align: center;
+  font-family: Futura Hv BT;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+#register-now:hover{
+  color: red;
+
+}
+.abt-div{
+  padding-bottom: 8vw !important;
+}
+#utopia-img{
+  /* position: relative; */
+  height: 100%;
+  width: 100%;
+  /* background-image: url(./static/images/hero-bg.png) !important; */
+   
+  margin-top: 2vw !important;
+
+ 
+}
+.iitb{
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+ 
+  align-items: center !important;
+  justify-content: center;
+  text-align: center !important;
+  
+}
+.iitb > p{
+  width: 80%;
+  text-align: center !important;
+  justify-content: center !important;
+  margin-left: 9vw !important;
+  font-family: Futura Bk BT !important;
+  font-size: 2vw;}
+  .iitb > h2{
+    font-family: Futura Bk BT !important;
+    font-size: 4vw !important;
+    font-weight: 500 !important;
+  }
+  .iitb > h5{
+    font-size: 1.5vw !important;
+  }
+  .grab-sect{
+    background: linear-gradient(to bottom, black 50%, white 50%);
+    padding-top: 2vw ;
+    margin-top: 2vw;
+    /* height: 100%;
+  width: 100%; */
+  /* position: relative; */
+  height: 100%;
+
+  }
+  .grab-sect>h3{
+    font-family: Futura Bk BT;
+    width: 35%;
+    color: red;
+    font-weight: 700 !important;
+    margin-top: 2vw;
+    margin-left: 3vw;
+    font-size: 4.6vw;
+    font-style: normal;
+  }
+  .grab-sect>p{
+    color: #FFF;
+font-family: Futura Bk BT;
+font-size: 1.6vw;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin-left: 37vw;
+/* margin-top: 6vw; */
+width: 60%;
+  }
+  .grab-sect>img{
+    height: 200vh;
+  width: 90%;
+  margin-left: 4vw;
+  margin-top: 7vw;
+  /* top: 50vh; /* Stick when it reaches the halfway point */
+  /* transform: translateY(-50%); */ 
+  }
+  #ticket-div{
+    /* position: relative !important; */
+    height: 100%;
+  }
+   /* #ticket{
+    position:sticky !important;
+    top: 0vh !important;
+    width: 100%;
+    
+  }  */
+  #ticket{
+    z-index: 9 !important;
+    position: sticky;
+    bottom: -20vw;
+    /* margin-top: 5vw; */
+    padding-bottom: 3vw;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); */
+    width: 100vw;
+    @media only screen and (max-width: 1410px){
+      width: 100% !important;
+
+
+  }}
+  .grab-sect > a{
+    width: 50vw;
+  }
+  /* .last{
+    width: 100%;
+    height: 100%;
+    color: yellow;
+    overflow-y: scroll ;
+  } */
+  .black{
+    background-color: rgb(255, 0, 0) !important;
+    height: 20%;
+    width: 100%;
+    z-index: 20;
+    position: absolute;
+    /* margin-top: -42vw; */
+    bottom: 1vw;
+  }
+  .sub-title{
+    color: red;
+    text-align: center;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-list{
+    padding: grid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-right: 10px;
+    width: 280px;
+    height:380;
+    position: relative;
+    overflow: hidden;   
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.work div h3{
+    margin-top: 10px;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work :hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: backgroundd 0.5s ;
+    
+}
+.btn:hover{
+    background: #ff004f;
+}
+  /* .black>h3{
+    padding-left: 2vw ;
+  } */
+
+/* 
+
+.about-section > .con {
+  margin-top: 3vw;
+  margin-bottom:4vw ;
+  margin-left: 3vw;
+  width: 3vw;
+  position: absolute !important;
+}
+.about-section > .map-div{
+  margin-top: 3vw;
+  margin-bottom:4vw ;
+  background-color: white;
+  padding-bottom: 4vw;
+} */
+  
+@media only screen and (max-width: 1130px){
+  #hero-img{
+    margin-top: 15vw !important;
+}
+/* .form-container{
+  margin-top: 15vw !important;
+} */
+#ticket{
+  height: 70vh !important;
+}
+/* .reg-div > h3{
+  margin-top: 5vw !important;
+} */
+/* .black{
+  height: 100%;
+} */
+}
+  
+@media only screen and (max-width: 735px){
+  /* #hero-img{
+    margin-top: 10vw !important;
+} */
+ #ticket{
+  position: relative;
+  margin-top: -37vw;
+ }
+ .grab-sect {
+  background: linear-gradient(to bottom, black 50%, white 50%);
+ }
+#logo{
+  width: 20vh;
+  height: 5vh;
+  @media only screen and (max-width: 748px){
+    width: 24vh!important;
+    height: 6vh;
+  }
+  
+}
+
+}
+@media only screen and (max-width: 416px){
+  /* #hero-img{
+    margin-top: 17vw !important;
+} */
+#ticket{
+  height: 50vh !important;
+}
+}
+

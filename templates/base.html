@@ -1,0 +1,514 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="//db.onlinewebfonts.com/c/cc84650569fd07dac022c55b20c66e46?family=Futura+Bk+BT" rel="stylesheet" type="text/css"/>
+
+    <title>TEDxIITBOMBAY</title>
+  </head>
+  <style>
+    body{
+      overflow-x: hidden;
+    }
+    .navbar-expand-lg .navbar-collapse {
+  position: absolute;
+  right: 5%;
+  color: rgb(255, 255, 255) !important;
+  
+  @media only screen and (max-width: 995px) {
+    top: 80% !important;
+    position: absolute;
+    background-color: rgb(0, 0, 0) !important;
+    z-index: 2 !important;
+  }
+}
+ 
+  @media only screen and (max-width: 995px){
+    #navbarSupportedContent ul li a{  
+      color: rgb(255, 255, 255) !important;
+
+  }
+}
+    /* .about-section > .con{
+      margin-top: -6vw;
+    /* margin-bottom: 4vw; */
+    /* margin-left: 1vw;
+    width: 3vw; */
+    /* position: absolute !important; */
+    /* width: 50%; */
+    /* margin-bottom: 37vw !important; */
+    /* padding-bottom: 2vw; */
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* background-color: white; */
+    /* left: -8vw;
+    position: relative;
+} */
+/* .map-div{
+  background-color: white;
+} */
+/* #utopia-img::-webkit-media-controls-panel {
+    display: none !important;
+  }
+
+  #utopia-img::-webkit-media-controls-enclosure {
+    display: none !important;
+  }
+
+  #utopia-img::-webkit-media-controls {
+    display: none !important;
+  } */
+.con > h3{
+  color: #000;
+text-align: center;
+font-family: Futura Hv BT;
+font-size: 4vw !important;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding-bottom: 3vw;
+margin-top: 2vw;
+/* margin-left: 3vw !important; */
+}
+.con-div > h4{
+  color: #000;
+text-align: center;
+font-family: Futura Hv BT !important;
+font-size: 2.5vw !important;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+/* .map-div{
+  width: 60%;
+    height: 100%;
+    margin-left: 60vw;
+    margin-top: -22.5vw;
+} */
+.map-div > h3{
+  color: #000;
+text-align: center;
+font-family: Futura Hv BT !important;
+font-size: 4vw !important;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding-bottom: 2.5vw;
+margin-left: 38vw;
+
+}
+.utopia-img > video{
+  height: 66vh !important;
+  width: 100%;
+  object-fit: cover;
+  @media only screen and (max-width: 900px){
+    height: 50vh !important;
+  }
+  @media only screen and (max-width: 700px){
+    height: 40vh !important;
+  }
+  @media only screen and (max-width: 500px){
+    height: 28vh !important;
+  }
+  @media only screen and (max-width: 350px){
+    height: 20vh !important;
+  }
+}
+
+.bottom-div{
+  /* background-color: white;
+    /* padding-left: -21vw; */
+    /* left: -31vw;
+    position: absolute;
+    width: 130%;
+    bottom: -21vw;
+    padding-bottom: 4vw; */ 
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -18vw; */
+    /* margin-bottom: 5vw; */
+    padding-bottom: 29vw;
+}
+.map-window{
+  margin-left: 50vw !important;
+  width: 5vw;
+}
+.con{
+  margin-left: -38vw;
+}
+
+.map-div{
+  margin-top: -22.5vw;
+    margin-left: 10vw;
+}
+.reg-div{
+ background: black;
+color: rgb(255, 255, 255);
+font-family: Futura Hv BT;
+text-align: center;
+margin-top: 2vw;
+/* font-size: 1.5vw; */
+padding-top: 3vw;
+padding-bottom: 3vw;
+}
+.reg-div > form{
+  /* text-align: center;
+  justify-content: center;
+  display: flex; */
+  position: absolute;
+  left: 25vw;
+}
+.reg-div > .form-container{
+  max-width: 50vw !important;
+  left: -6vw;
+  font-size: 160% !important;
+}
+.reg-div > h3{
+  font-size: 2vw;
+  font-family:  Futura Lt BT !important;
+  margin-top: 3vw;
+  @media only screen and (max-width: 1130px){
+    margin-top: 5vw !important;
+  }
+  @media only screen and (max-width: 813px){
+    margin-top: 8vw !important;
+    font-size: 3vw;
+  }
+  @media only screen and (max-width: 700px){
+    margin-top: 13vw !important;
+    font-size: 3vw;
+  }
+  @media only screen and (max-width: 540px){
+    margin-top: 15vw !important;
+    font-size: 4vw;
+  }
+  @media only screen and (max-width: 410px){
+    margin-top: 20vw !important;
+    font-size: 4vw;
+  }
+}
+.form-container {
+    /* text-align: center; */
+    /* width: 98%; */
+    max-width: 46vw;
+    margin-top: 4vw;
+    justify-content: center;
+    /* position: relative; */
+    margin-left: 31vw !important;
+  
+  }
+  .bottom-div{
+    background-color: rgb(255, 255, 255);
+    margin-left: -2vw ;
+ 
+  }
+  .con > .con-div{
+    margin-top: 2vw;
+  }
+  .map-div{
+    margin-left: 41vw;
+    padding-top: 0;
+    margin-top: -25vw;
+    @media only screen and (max-width: 1400px){
+      margin-top: -26vw !important;
+    }
+    @media only screen and (max-width: 1000px){
+      margin-top: -27vw !important;
+    }
+    @media only screen and (max-width: 700px){
+      margin-top: -30vw !important;
+    }
+  }
+  .map-div > h3{
+    margin-left: 31vw;
+  }
+  .map-window{
+    width: 100%;
+    height: auto;
+  }
+  .gmap_canvas{
+    width: 33vw !important;
+    border-radius: 82px !important;
+    height: 40vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    @media only screen and (max-width: 1380px){
+      height: 30vh !important;
+      @media only screen and (max-width: 1000px){
+        height: 25vh !important;
+    }
+    }
+  
+  }
+
+  #reg-ticket{
+    border-radius: 10px !important;
+    width: 12.3vw;
+    height: 4vw;
+    left: 44vw;
+    top: -45vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    z-index:-0.5 !important;
+  }
+
+  .line{
+    position: absolute;
+    bottom: 23vw;
+    width: 100%;
+    margin-bottom: 2vw;
+    margin-left: 0.5vw;
+    
+  }
+  .line > img{
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    /* margin-left: 5vw !important; */
+    /* margin-bottom: 24vw; */
+    /* height: 5vw; */
+    height: 0.5vw;
+    border: 2px solid black;
+
+  }
+  .social{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    width: 100%;
+    padding-right: 3vw;
+    position: absolute;
+    bottom: 19vw;
+    padding-top: 4vw;
+    @media only screen and (max-width: 1130px)
+    { bottom: 15vw;
+    }
+    @media only screen and (max-width: 750px)
+    {
+      justify-content: center;
+      align-items: center;
+      bottom: 11vw;
+    }
+
+  }
+  .social > a > img{
+    margin: 0.6vw !important;
+    transition: transform 0.3s ease;
+    @media only screen and (max-width: 750px){
+      margin: 1.2vw;
+    }
+  }
+  .social a:hover {
+  transform: scale(1.5);
+  /* Increase the scale value as per your preference to control the pop-up effect.
+     A scale of 1.2 will make the image 20% larger than its original size. */
+}
+  #reg-bottom{
+    
+    right: 0;
+    /* width: 100%; */
+    margin-left: 78vw;
+    width: 12vw;
+    height: 3.5vw;
+    border-radius: 10px !important;
+    bottom: -19vw;
+    @media only screen and (max-width: 1050px){
+    bottom: -22vw !important;}
+    @media only screen and (max-width: 750px){
+    /* bottom: -35vw !important;
+    margin-left: 45vw;
+    margin-top: 7vw !important;
+    width: 15vw !important; */
+    display: none !important;
+  }
+  }
+
+   @media only screen and (max-width: 600px){
+      .map-div{
+        margin-top:9vw !important;
+        margin-left: 12vw !important;
+      }
+      .map-div > h3{
+        margin-left: 25vw;
+      }
+      .gmap_canvas{
+        width: 60vw !important;
+    height: 35vh !important;
+      }
+      .con-div{
+         margin-left: 39vw;
+      }
+      .con-div > h3{
+        margin-left: 35vw !important;
+      }
+      .con > h3 {
+    
+    margin-left: 37vw;}
+    } 
+    @media only screen and (max-width: 750px){
+      .reg-bottom{
+        display: none !important;
+      }
+    }
+    @media only screen and (max-width: 1130px){
+  #hero-img{
+    margin-top: 9vw !important;
+}
+    }
+    @media only screen and (max-width: 735px){
+  #hero-img{
+    margin-top: 13vw !important;
+}
+    }
+    @media only screen and (max-width: 416px){
+  #hero-img{
+    margin-top: 19vw !important;
+}
+    }
+
+.speak
+{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  margin-top: 1vw;
+  overflow-y: hidden;
+}
+.speak > h3{
+  font-size: 2vw;
+  font-family:  Futura Bk BT !important;
+  margin-top: 5vw;
+  padding-top: 5vw;
+  @media only screen and (max-width: 1150px){
+    font-size: 3vw;
+    margin-top: 9vw;
+  }
+  @media only screen and (max-width: 750px){
+    font-size: 5vw;
+    margin-top: 14vw;
+  }
+  @media only screen and (max-width: 750px){
+    font-size: 7vw;
+    margin-top: 25vw;
+  }
+}
+
+  </style>
+ 
+  <body>
+    <header style="  position: absolute;
+    top: 0 !important;">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary py-0 my-0">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href=#><img id="logo" style="width: 35vh;" src="../../static/images/ted-logo.png" class="logo-img" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="nav-icon"> <i class="fa fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#abt">About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'speakers' %}">Speakers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#venue">Venue</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'partners' %}">Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Work with Us</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  {% block body %}{% endblock body %}
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?client=google-maps-embed&amp;paint_origin=&amp;libraries=geometry,search&amp;v=3.exp&amp;language=en&amp;region=in&amp;callback=onApiLoad" nonce="" async="" defer=""></script>
+    <script>
+      window.addEventListener('scroll', function() {
+        var imageContainer = document.getElementById('hero-container');
+        var stickyImage = document.getElementById('hero-img');
+        var rect = imageContainer.getBoundingClientRect();
+        
+        if (rect.top <= 0) {
+          stickyImage.style.position = 'fixed';
+        } else {
+          stickyImage.style.position = 'sticky';
+        }
+      });
+    //   window.addEventListener('scroll', function() {
+    //   var ticket = document.querySelector('ticket-div');
+    //   var ticketImg = document.getElementById('ticket');
+    //   var rect = ticket.getBoundingClientRect();
+      
+    //   if (rect.top <= 0) {
+    //     ticketImg.style.position = 'fixed';
+    //   } else {
+    //     ticketImg.style.position = 'sticky';
+    //   }
+    // });
+    
+</script>
+<script>
+  let options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1.0
+  };
+
+  let callback = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.target.id === 'utopia-img') {
+        if (entry.isIntersecting) {
+          entry.target.play();
+        } else {
+          entry.target.pause();
+        }
+      }
+    });
+  };
+
+  let observer = new IntersectionObserver(callback, options);
+  observer.observe(document.querySelector('#utopia-img'));
+</script>
+<script>
+  const video = document.getElementById('utopia-video');
+
+  // Replay the video when it ends
+  video.addEventListener('timeupdate', () => {
+    if (video.currentTime === video.duration) {
+      video.currentTime = 0;
+      video.play();
+    }
+  });
+
+ 
+  video.play();
+</script>
+  </body>
+</html>
